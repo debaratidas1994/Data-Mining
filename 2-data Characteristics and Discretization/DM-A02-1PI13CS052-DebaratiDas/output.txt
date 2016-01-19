@@ -1,0 +1,19 @@
+The Statistical Contents are :
+
+Min       Max       Mean      Std-Dev                                                     
+18.0      67.0      42.395    14.425                                                      
+5014.21   63130.1   27524.031 12899.468                                                   
+
+Covariance between age and income is :139829.44286941667
+Correlation between age and income is :0.7514716170268184
+
+Cut points are :
+19543.1825
+34072.155
+48601.127499999995
+
+Frequencies in four bins are :
+192
+240
+112
+56

@@ -1,0 +1,1029 @@
+Data Mining assignment# 1  By Debarati Das  USN : XXXXX
+
+
+=====================================================
+Results of Data Mining assignment# 1 Step#1
+=====================================================
+
+
+You have entered TestSet count= 10 
+
+Since it is 150 element dataset, Traincount= 150-Testcount= 140 
+
+Loading training data... 
+
+Loading test data... 
+
+Test ids are [2, 17, 59, 103, 21, 35, 114, 23, 112, 100]
+
+
+=====================================================
+Results of Data Mining assignment#1 Step#2 (descriptive statistics)
+=====================================================
+
+
+=====================================================
+(step 2 : Part 1) Descriptive statistics of full datatset
+=====================================================
+               ID  Sepal.Length  Sepal.Width  Petal.Length  Petal.Width
+count  150.000000    150.000000   150.000000    150.000000   150.000000
+mean    75.500000      5.843333     3.057333      3.758000     1.199333
+std     43.445368      0.828066     0.435866      1.765298     0.762238
+min      1.000000      4.300000     2.000000      1.000000     0.100000
+25%     38.250000      5.100000     2.800000      1.600000     0.300000
+50%     75.500000      5.800000     3.000000      4.350000     1.300000
+75%    112.750000      6.400000     3.300000      5.100000     1.800000
+max    150.000000      7.900000     4.400000      6.900000     2.500000
+
+
+=====================================================
+(step 2 : Part 1) Descriptive statistics of full datatset grouped by species
+=====================================================
+                         ID  Petal.Length  Petal.Width  Sepal.Length  \
+Species                                                                
+setosa     count   50.00000     50.000000    50.000000     50.000000   
+           mean    25.50000      1.462000     0.246000      5.006000   
+           std     14.57738      0.173664     0.105386      0.352490   
+           min      1.00000      1.000000     0.100000      4.300000   
+           25%     13.25000      1.400000     0.200000      4.800000   
+           50%     25.50000      1.500000     0.200000      5.000000   
+           75%     37.75000      1.575000     0.300000      5.200000   
+           max     50.00000      1.900000     0.600000      5.800000   
+versicolor count   50.00000     50.000000    50.000000     50.000000   
+           mean    75.50000      4.260000     1.326000      5.936000   
+           std     14.57738      0.469911     0.197753      0.516171   
+           min     51.00000      3.000000     1.000000      4.900000   
+           25%     63.25000      4.000000     1.200000      5.600000   
+           50%     75.50000      4.350000     1.300000      5.900000   
+           75%     87.75000      4.600000     1.500000      6.300000   
+           max    100.00000      5.100000     1.800000      7.000000   
+virginica  count   50.00000     50.000000    50.000000     50.000000   
+           mean   125.50000      5.552000     2.026000      6.588000   
+           std     14.57738      0.551895     0.274650      0.635880   
+           min    101.00000      4.500000     1.400000      4.900000   
+           25%    113.25000      5.100000     1.800000      6.225000   
+           50%    125.50000      5.550000     2.000000      6.500000   
+           75%    137.75000      5.875000     2.300000      6.900000   
+           max    150.00000      6.900000     2.500000      7.900000   
+
+                  Sepal.Width  
+Species                        
+setosa     count    50.000000  
+           mean      3.428000  
+           std       0.379064  
+           min       2.300000  
+           25%       3.200000  
+           50%       3.400000  
+           75%       3.675000  
+           max       4.400000  
+versicolor count    50.000000  
+           mean      2.770000  
+           std       0.313798  
+           min       2.000000  
+           25%       2.525000  
+           50%       2.800000  
+           75%       3.000000  
+           max       3.400000  
+virginica  count    50.000000  
+           mean      2.974000  
+           std       0.322497  
+           min       2.200000  
+           25%       2.800000  
+           50%       3.000000  
+           75%       3.175000  
+           max       3.800000  
+
+
+=====================================================
+Results of Data Mining assignment# 1 Step#2 Part #2 (distance computation)
+=====================================================
+
+
+=====================================================
+(step 2 : Part 2) Calculate different types of distance between any two points and find the minimum and maximum of those
+=====================================================
+
+
+=====================================================
+Distance matrix for Each Element of training set from each including itself ... 
+
+=====================================================
+nxn distance matrix using Euclidean distance..............
+
+=====================================================
+
+
+=====================================================
+For each element(in train dataset) minimum and maximum distance(Euclidean) element & distance..............
+
+=====================================================
+Minimum: 0.0 102 ( virginica ) 143 ( virginica )
+Maximum: 7.08519583357 14 ( setosa ) 119 ( virginica )
+=====================================================
+nxn distance matrix using Manhattan distance..............
+
+=====================================================
+
+
+=====================================================
+For each element (in train dataset) minimum and maximum distance(Manhattan) element & distance..............
+
+=====================================================
+Minimum: 0.0 102 ( virginica ) 143 ( virginica )
+Maximum: 12.0 42 ( setosa ) 118 ( virginica )
+=====================================================
+nxn distance matrix using Supremum distance..............
+
+=====================================================
+
+
+=====================================================
+For each element(in train dataset) minimum and maximum distance(Supremum) element & distance..............
+
+=====================================================
+Minimum: 0.0 102 ( virginica ) 143 ( virginica )
+Maximum: 5.8 14 ( setosa ) 119 ( virginica )
+=====================================================
+Assignment 1 : step 3 !!
+=====================================================
+
+
+Classification using k nearest neighbour with k=1
+=====================================================
+Classification using Euclidean distance !!
+=====================================================
+===========neighbours of ===========
+
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of ===========
+
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+
+
+=====================================================
+Classification using Manhattan distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+=====================================================
+Classification using Supremum distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['versicolor']
+> predicted='versicolor', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 90.0%
+Classification using k nearest neighbour with k=2
+=====================================================
+Classification using Euclidean distance !!
+=====================================================
+===========neighbours of ===========
+
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of ===========
+
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+
+
+=====================================================
+Classification using Manhattan distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+=====================================================
+Classification using Supremum distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['versicolor', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+Classification using k nearest neighbour with k=3
+=====================================================
+Classification using Euclidean distance !!
+=====================================================
+===========neighbours of ===========
+
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of ===========
+
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+
+
+=====================================================
+Classification using Manhattan distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+=====================================================
+Classification using Supremum distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['versicolor', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+Classification using k nearest neighbour with k=4
+=====================================================
+Classification using Euclidean distance !!
+=====================================================
+===========neighbours of ===========
+
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of ===========
+
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+
+
+=====================================================
+Classification using Manhattan distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+=====================================================
+Classification using Supremum distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'versicolor']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['versicolor', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+Classification using k nearest neighbour with k=5
+=====================================================
+Classification using Euclidean distance !!
+=====================================================
+===========neighbours of ===========
+
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of ===========
+
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica', 'versicolor']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of ===========
+
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of ===========
+
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+
+
+=====================================================
+Classification using Manhattan distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica', 'versicolor']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+=====================================================
+Classification using Supremum distance !!
+=====================================================
+===========neighbours of===========
+[2, 4.9, 3.0, 1.4, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[17, 5.4, 3.9, 1.3, 0.4, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[59, 6.6, 2.9, 4.6, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+===========neighbours of===========
+[103, 7.1, 3.0, 5.9, 2.1, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[21, 5.4, 3.4, 1.7, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[35, 4.9, 3.1, 1.5, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[114, 5.7, 2.5, 5.0, 2.0, 'virginica']
+neighbors are :
+['virginica', 'virginica', 'virginica', 'versicolor', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[23, 4.6, 3.6, 1.0, 0.2, 'setosa']
+neighbors are :
+['setosa', 'setosa', 'setosa', 'setosa', 'setosa']
+> predicted='setosa', actual='setosa'
+===========neighbours of===========
+[112, 6.4, 2.7, 5.3, 1.9, 'virginica']
+neighbors are :
+['versicolor', 'virginica', 'virginica', 'virginica', 'virginica']
+> predicted='virginica', actual='virginica'
+===========neighbours of===========
+[100, 5.7, 2.8, 4.1, 1.3, 'versicolor']
+neighbors are :
+['versicolor', 'versicolor', 'versicolor', 'versicolor', 'versicolor']
+> predicted='versicolor', actual='versicolor'
+Accuracy: 100.0%
+=====================================================
+...Assignment 1 done...Check resultfile.txt for results ...
+
+=====================================================
