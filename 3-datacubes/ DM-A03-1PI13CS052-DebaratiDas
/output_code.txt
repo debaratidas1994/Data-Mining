@@ -1,0 +1,310 @@
+
+Cut points for the three bins are :
+
+34.33333333333333
+50.666666666666664
+
+Example abstract of Dataset after modification(renaming attributes):
+
+
+MIDDLE,FEMALE,INNER_CITY,17546
+MIDDLE,MALE,TOWN,30085.1
+OLD,FEMALE,INNER_CITY,16575.4
+YOUNG,FEMALE,TOWN,20375.4
+OLD,FEMALE,RURAL,50576.3
+OLD,FEMALE,TOWN,37869.6
+YOUNG,MALE,RURAL,8877.07
+OLD,MALE,TOWN,24946.6
+MIDDLE,FEMALE,SUBURBAN,25304.3
+OLD,MALE,TOWN,24212.1
+OLD,FEMALE,TOWN,59803.9
+OLD,FEMALE,INNER_CITY,26658.8
+MIDDLE,FEMALE,TOWN,15735.8
+
+
+Enter n for the Datacubes 
+0
+
+Datacubes(0)
+All        Count      Average income      
+           600        27524.031  
+
+Enter n for the Datacubes 
+1
+Datacubes(1)
+
+WRT AGE
+_____________________________________________________________________________________________________
+
+YOUNG                         	16544.780667
+
+COUNT(category)               	195
+
+OLD                           	39315.317801
+
+COUNT(category)               	191
+
+MIDDLE                        	27004.489720
+
+COUNT(category)               	214
+
+WRT SEX
+_____________________________________________________________________________________________________
+
+MALE                          	27216.694200
+
+COUNT(category)               	300
+
+FEMALE                        	27831.368233
+
+COUNT(category)               	300
+
+WRT REGION
+_____________________________________________________________________________________________________
+
+RURAL                         	30027.605417
+
+COUNT(category)               	96
+
+TOWN                          	26786.349653
+
+COUNT(category)               	173
+
+SUBURBAN                      	28656.356935
+
+COUNT(category)               	62
+
+INNER_CITY                    	26843.999963
+
+COUNT(category)               	269
+
+Enter n for the Datacubes 
+2
+Datacubes(2)
+
+
+WRT AGE/SEX
+_____________________________________________________________________________________________________
+_____________________________________________________________________________________________________
+
+|OLD|MALE                     	40363.191250
+
+COUNT(category)               	80
+
+|OLD|FEMALE                   	38560.093694
+
+COUNT(category)               	111
+
+|YOUNG|FEMALE                 	16759.840538
+
+COUNT(category)               	93
+
+|MIDDLE|MALE                  	27698.185593
+
+COUNT(category)               	118
+
+|YOUNG|MALE                   	16348.696667
+
+COUNT(category)               	102
+
+|MIDDLE|FEMALE                	26151.821875
+
+COUNT(category)               	96
+
+_____________________________________________________________________________________________________
+WRT SEX/REGION
+_____________________________________________________________________________________________________
+_____________________________________________________________________________________________________
+
+|MALE|TOWN                    	26849.572469
+
+COUNT(category)               	81
+
+|FEMALE|TOWN                  	26730.686087
+
+COUNT(category)               	92
+
+|MALE|INNER_CITY              	26538.128188
+
+COUNT(category)               	138
+
+|FEMALE|RURAL                 	31366.274468
+
+COUNT(category)               	47
+
+|FEMALE|SUBURBAN              	28573.271667
+
+COUNT(category)               	30
+
+|MALE|SUBURBAN                	28734.249375
+
+COUNT(category)               	32
+
+|FEMALE|INNER_CITY            	27166.216031
+
+COUNT(category)               	131
+
+|MALE|RURAL                   	28743.575918
+
+COUNT(category)               	49
+_____________________________________________________________________________________________________
+WRT AGE/REGION
+_____________________________________________________________________________________________________
+_____________________________________________________________________________________________________
+
+|YOUNG|RURAL                  	16089.500714
+
+COUNT(category)               	28
+
+|OLD|TOWN                     	37704.608696
+
+COUNT(category)               	46
+
+|OLD|INNER_CITY               	38462.301087
+
+COUNT(category)               	92
+
+|YOUNG|SUBURBAN               	16227.501500
+
+COUNT(category)               	20
+
+|MIDDLE|RURAL                 	29472.242857
+
+COUNT(category)               	35
+
+|MIDDLE|INNER_CITY            	26344.231250
+
+COUNT(category)               	80
+
+|MIDDLE|TOWN                  	26278.131169
+
+COUNT(category)               	77
+
+|YOUNG|TOWN                   	17524.207800
+
+COUNT(category)               	50
+
+|MIDDLE|SUBURBAN              	28021.713636
+
+COUNT(category)               	22
+
+|OLD|SUBURBAN                 	41783.320000
+
+COUNT(category)               	20
+
+|OLD|RURAL                    	42442.896970
+
+COUNT(category)               	33
+
+|YOUNG|INNER_CITY             	16236.760722
+
+COUNT(category)               	97
+
+_____________________________________________________________________________________________________
+Enter n for the Datacubes 
+3
+Datacubes(3)
+
+
+WRT AGE/SEX/REGION
+_____________________________________________________________________________________________________
+_____________________________________________________________________________________________________
+
+|YOUNG|FEMALE|INNER_CITY      	16484.554545
+
+COUNT(category)               	44
+
+|MIDDLE|FEMALE|RURAL          	27482.261538
+
+COUNT(category)               	13
+
+|YOUNG|MALE|INNER_CITY        	16031.045094
+
+COUNT(category)               	53
+
+|OLD|FEMALE|SUBURBAN          	37096.270000
+
+COUNT(category)               	10
+
+|OLD|FEMALE|TOWN              	38012.021429
+
+COUNT(category)               	28
+
+|YOUNG|MALE|SUBURBAN          	14949.452727
+
+COUNT(category)               	11
+
+|MIDDLE|FEMALE|TOWN           	25031.425000
+
+COUNT(category)               	36
+
+|MIDDLE|MALE|RURAL            	30648.140909
+
+COUNT(category)               	22
+
+|OLD|MALE|SUBURBAN            	46470.370000
+
+COUNT(category)               	10
+
+|OLD|MALE|RURAL               	42104.872727
+
+COUNT(category)               	11
+
+|MIDDLE|MALE|INNER_CITY       	26852.129545
+
+COUNT(category)               	44
+
+|YOUNG|FEMALE|RURAL           	14956.958333
+
+COUNT(category)               	12
+
+|MIDDLE|MALE|TOWN             	27372.800000
+
+COUNT(category)               	41
+
+|MIDDLE|MALE|SUBURBAN         	26395.300000
+
+COUNT(category)               	11
+
+|OLD|MALE|TOWN                	37226.411111
+
+COUNT(category)               	18
+
+|OLD|FEMALE|RURAL             	42611.909091
+
+COUNT(category)               	22
+
+|MIDDLE|FEMALE|SUBURBAN       	29648.127273
+
+COUNT(category)               	11
+
+|YOUNG|FEMALE|SUBURBAN        	17789.561111
+
+COUNT(category)               	9
+
+|OLD|MALE|INNER_CITY          	39783.478049
+
+COUNT(category)               	41
+
+|YOUNG|FEMALE|TOWN            	17634.115000
+
+COUNT(category)               	28
+
+|YOUNG|MALE|TOWN              	17384.325909
+
+COUNT(category)               	22
+
+|YOUNG|MALE|RURAL             	16938.907500
+
+COUNT(category)               	16
+
+|OLD|FEMALE|INNER_CITY        	37400.178431
+
+COUNT(category)               	51
+
+|MIDDLE|FEMALE|INNER_CITY     	25723.466667
+
+COUNT(category)               	36
+_____________________________________________________________________________________________________
+Enter n for the Datacubes 
+5
