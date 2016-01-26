@@ -1,0 +1,6 @@
+___________________________________________________________________________
+Data Mining Course Assignments and Self Experiments
+
+Course is taught by Prof. BN Rao, PESIT
+
+____________________________________________________________________________
