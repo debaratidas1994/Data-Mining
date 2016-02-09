@@ -1,0 +1,46 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     supermarket-weka.filters.unsupervised.attribute.Remove-R1-9,11,57,70,79-81,88-89,100-102,107-114,116-120,122-130,137-179,189,192-199,201-216-weka.filters.unsupervised.attribute.Remove-R107
+Instances:    4627
+Attributes:   106
+[list of attributes omitted]
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.1 (463 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 47
+
+Size of set of large itemsets L(2): 498
+
+Size of set of large itemsets L(3): 1959
+
+Size of set of large itemsets L(4): 2888
+
+Size of set of large itemsets L(5): 1679
+
+Size of set of large itemsets L(6): 317
+
+Size of set of large itemsets L(7): 11
+
+Best rules found:
+
+ 1. biscuits=t frozen foods=t pet foods=t milk-cream=t vegetables=t 516 ==> bread and cake=t 475    conf:(0.92)
+ 2. baking needs=t biscuits=t milk-cream=t margarine=t fruit=t vegetables=t 505 ==> bread and cake=t 464    conf:(0.92)
+ 3. biscuits=t frozen foods=t milk-cream=t margarine=t vegetables=t 585 ==> bread and cake=t 537    conf:(0.92)
+ 4. biscuits=t canned vegetables=t frozen foods=t fruit=t vegetables=t 536 ==> bread and cake=t 492    conf:(0.92)
+ 5. baking needs=t frozen foods=t milk-cream=t margarine=t fruit=t vegetables=t 517 ==> bread and cake=t 474    conf:(0.92)
+ 6. biscuits=t frozen foods=t pet foods=t milk-cream=t fruit=t 511 ==> bread and cake=t 468    conf:(0.92)
+ 7. biscuits=t frozen foods=t tissues-paper prd=t milk-cream=t vegetables=t 575 ==> bread and cake=t 526    conf:(0.91)
+ 8. biscuits=t frozen foods=t beef=t fruit=t vegetables=t 536 ==> bread and cake=t 490    conf:(0.91)
+ 9. baking needs=t biscuits=t frozen foods=t cheese=t fruit=t 538 ==> bread and cake=t 491    conf:(0.91)
+10. biscuits=t frozen foods=t milk-cream=t margarine=t fruit=t 592 ==> bread and cake=t 540    conf:(0.91)
+

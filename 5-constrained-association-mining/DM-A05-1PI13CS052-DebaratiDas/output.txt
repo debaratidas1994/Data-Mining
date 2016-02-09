@@ -1,0 +1,12 @@
+The Final List of Rules are :
+
+PREMISE                                  CONSEQUENCE                              TOTAL-SUPPORT   LIFT       CONFIDENCE 
+
+[vegetables=t, biscuits=t]               [fruit=t]                                1404.00         1404.00    0.80       
+[bread and cake=t, vegetables=t]         [fruit=t]                                1791.00         1791.00    0.78       
+[vegetables=t, milk-cream=t]             [fruit=t]                                1571.00         1571.00    0.78       
+[vegetables=t, frozen foods=t]           [fruit=t]                                1451.00         1451.00    0.77       
+[vegetables=t]                           [bread and cake=t, fruit=t]              1791.00         1791.00    0.60       
+[vegetables=t]                           [fruit=t, milk-cream=t]                  1571.00         1571.00    0.53       
+[vegetables=t]                           [fruit=t, baking needs=t]                1489.00         1489.00    0.50       
+[vegetables=t]                           [fruit=t, frozen foods=t]                1451.00         1451.00    0.49   
