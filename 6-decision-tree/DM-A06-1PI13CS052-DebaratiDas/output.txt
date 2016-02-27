@@ -1,0 +1,104 @@
+//Output 1 :
+
+J48 pruned tree
+------------------
+
+children = 0
+|   married = NO
+|   |   mortgage = NO: YES (47.0/3.0)
+|   |   mortgage = YES
+|   |   |   save_act = NO: YES (12.0)
+|   |   |   save_act = YES: NO (23.0)
+|   married = YES
+|   |   save_act = NO
+|   |   |   mortgage = NO: NO (35.0/4.0)
+|   |   |   mortgage = YES: YES (25.0/3.0)
+|   |   save_act = YES: NO (115.0/11.0)
+children = 1
+|   income <= 15538.8
+|   |   age <= 41: NO (22.0/2.0)
+|   |   age > 41: YES (2.0)
+|   income > 15538.8: YES (108.0/5.0)
+children = 2
+|   income <= 30189.4: NO (83.0/9.0)
+|   income > 30189.4: YES (50.0/5.0)
+children = 3
+|   income <= 44288.3: NO (60.0/5.0)
+|   income > 44288.3: YES (8.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	23
+
+//Output 1:
+
+Best-First Decision Tree
+
+children=(3)|(0)|(2)
+|  married=(YES)
+|  |  income < 45266.15
+|  |  |  save_act=(YES): NO(147.0/25.0)
+|  |  |  save_act!=(YES)
+|  |  |  |  mortgage=(NO): NO(46.0/12.0)
+|  |  |  |  mortgage!=(NO)
+|  |  |  |  |  children=(2)|(3): NO(11.0/0.0)
+|  |  |  |  |  children!=(2)|(3): YES(22.0/3.0)
+|  |  income >= 45266.15
+|  |  |  children=(0)|(1): NO(17.0/2.0)
+|  |  |  children!=(0)|(1): YES(17.0/0.0)
+|  married!=(YES)
+|  |  mortgage=(YES)
+|  |  |  save_act=(YES)
+|  |  |  |  children=(0)|(3)|(1): NO(25.0/0.0)
+|  |  |  |  children!=(0)|(3)|(1)
+|  |  |  |  |  income < 30499.7
+|  |  |  |  |  |  income < 13423.3: YES(1.0/1.0)
+|  |  |  |  |  |  income >= 13423.3: NO(6.0/0.0)
+|  |  |  |  |  income >= 30499.7: YES(3.0/1.0)
+|  |  |  save_act!=(YES)
+|  |  |  |  children=(2)|(3): NO(6.0/0.0)
+|  |  |  |  children!=(2)|(3): YES(12.0/0.0)
+|  |  mortgage!=(YES)
+|  |  |  children=(3)|(2)|(1)
+|  |  |  |  income < 30340.85
+|  |  |  |  |  region=(INNER_CITY)|(RURAL)|(TOWN)
+|  |  |  |  |  |  age < 49.5: NO(24.0/0.0)
+|  |  |  |  |  |  age >= 49.5: YES(1.0/1.0)
+|  |  |  |  |  region!=(INNER_CITY)|(RURAL)|(TOWN)
+|  |  |  |  |  |  age < 41.5: YES(2.0/0.0)
+|  |  |  |  |  |  age >= 41.5: NO(3.0/0.0)
+|  |  |  |  income >= 30340.85
+|  |  |  |  |  children=(3)
+|  |  |  |  |  |  income < 43235.05: NO(4.0/0.0)
+|  |  |  |  |  |  income >= 43235.05: YES(3.0/0.0)
+|  |  |  |  |  children!=(3): YES(16.0/0.0)
+|  |  |  children!=(3)|(2)|(1): YES(44.0/3.0)
+children!=(3)|(0)|(2)
+|  income < 15576.45
+|  |  age < 41.5
+|  |  |  income < 12694.1: NO(14.0/0.0)
+|  |  |  income >= 12694.1
+|  |  |  |  income < 13437.85: YES(2.0/0.0)
+|  |  |  |  income >= 13437.85: NO(6.0/0.0)
+|  |  age >= 41.5: YES(2.0/0.0)
+|  income >= 15576.45: YES(103.0/5.0)
+
+Size of the Tree: 49
+
+Number of Leaf Nodes: 25
+
+
+// Output 2 :
+
+Class                         Class predicted by C4.5       Class Predicted by Gini       
+
+NO                            NO                            NO                            
+NO                            NO                            NO                            
+YES                           YES                           YES                           
+YES                           YES                           YES                           
+NO                            NO                            NO                            
+NO                            NO                            NO                            
+NO                            NO                            NO                            
+YES                           YES                           YES                           
+YES                           YES                           YES                           
+NO                            NO                            NO                            

@@ -68,6 +68,7 @@ public static void main(String[] args) throws Exception {
 	   }
 	
 	for (int i = 0; i < finallistObject.size(); i++) {
+		//theres is a mistake here LOL , we have printed out support twice instead of lift
 		System.out.printf( numformat, finallistObject.get(i).getPremise(),finallistObject.get(i).getConsequence(),getTotalSupport(finallistObject, i),getTotalSupport(finallistObject, i),getConfidence(finallistObject.get(i)));
 	}
 
