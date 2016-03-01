@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.RandomForest -I 100 -K 1 -S 1
+Relation:     pima_diabetes
+Instances:    768
+Attributes:   9
+              preg
+              plas
+              pres
+              skin
+              insu
+              mass
+              pedi
+              age
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Random forest of 100 trees, each constructed while considering 1 random feature.
+Out of bag error: 0.2591
+
+
+
+Time taken to build model: 0.14 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         581               75.651  %
+Incorrectly Classified Instances       187               24.349  %
+Kappa statistic                          0.4414
+Mean absolute error                      0.3367
+Root mean squared error                  0.4079
+Relative absolute error                 74.0874 %
+Root relative squared error             85.5772 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.86      0.437      0.786     0.86      0.821      0.812    tested_negative
+                 0.563     0.14       0.683     0.563     0.618      0.812    tested_positive
+Weighted Avg.    0.757     0.333      0.75      0.757     0.75       0.812
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 430  70 |   a = tested_negative
+ 117 151 |   b = tested_positive
+
