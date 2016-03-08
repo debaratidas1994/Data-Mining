@@ -29,7 +29,11 @@ Contributing neurons are :
 	Neuron5	-0.47
 	Bias at this node is : 	0.03
 ____________________________________________________________________
-()
+
+('Number of iterations :', 1000)
+
+Termination criteria : when number of epochs are exhausted
+
 ('Number of iterations = ', 1000)
 
 
@@ -51,7 +55,7 @@ Contributing neurons are :
 	Neuron3	-0.66
 	Bias at this node is : 	0.70
 ____________________________________________________________________
-()
+
 ('For Neuron ', 6)
 Contributing neurons are :
 	Neuron4	-1.23
@@ -64,13 +68,13 @@ Contributing neurons are :
 	Neuron5	-1.19
 	Bias at this node is : 	-1.14
 ____________________________________________________________________
-()
+
 FINAL OUTPUTS:
 
 Node 4	-0.846
 Node 5	0.913
-()
+
 Node 6	0.985
 Node 7	-0.985
-()
+
 ____________________________________________________________________

@@ -22,7 +22,8 @@ class NeuralNetwork:
 		print("...INITIALY, MODEL'S Learnable parameters... :")
 		print("Weights and Bases: ")
 		self.display()
-		
+		print("Number of iterations :", 1000)
+		print("Termination criteria : when number of epochs are exhausted")
 	def display(self):
 		self.display_params(self.w1,self.b1,[4,5],[1,2,3])
 		self.display_params(self.w2,self.b2,[6,7],[4,5])
