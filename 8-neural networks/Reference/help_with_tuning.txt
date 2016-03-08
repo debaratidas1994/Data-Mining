@@ -1,0 +1,29 @@
+Start with a small number of iterations (it's actually more conventional to count 'epochs' rather than iterations--'epochs' refers to the number of iterations through the entire data set used to train the network). By 'small' let's say something like 50 epochs. The reason for this is that you want to see how the total error is changing with each additional training cycle (epoch)--hopefully it's going down (more on 'total error' below).
+
+Obviously you are interested in the point (the number of epochs) where the next additional epoch does not cause a further decrease in total error. So begin with a small number of epochs so you can approach that point by increasing the epochs.
+The learning rate you begin with should not be too fine or too coarse, (obviously subjective but hopefully you have a rough sense for what is a large versus small learning rate).
+
+Next, insert a few lines of testing code in your perceptron--really just a few well-placed 'print' statements. For each iteration, calculate and show the delta (actual value for each data point in the training data minus predicted value) then sum the individual delta values over all points (data rows) in the training data (i usually take the absolute value of the delta, or you can take the square root of the sum of the squared differences--doesn't matter too much. Call that summed value "total error"--just to be clear, this is total error (sum of the error across all nodes) per epoch.
+
+Then, plot the total error as a function of epoch number (ie, epoch number on the x axis, total error on the y axis). Initially of course, you'll see the data points in the upper left-hand corner trending down and to the right and with a decreasing slope
+Let the algorithm train the network against the training data. Increase the epochs (by e.g., 10 per run) until you see the curve (total error versus epoch number) flatten--i.e., additional iterations doesn't cause a decrease in total error.
+
+So the slope of that curve is important and so is its vertical position--ie., how much total error you have and whether it continues to trend downward with more training cycles (epochs). If, after increasing epochs, you eventually notice an increase in error, start again with a lower learning rate.
+
+The learning rate (usually a fraction between about 0.01 and 0.2) will certainly affect how quickly the network is trained--i.e., it can move you to the local minimum more quickly. It can also cause you to jump over it. So code a loop that trains a network, let's say five separate times, using a fixed number of epochs (and a the same starting point) each time but varying the learning rate from e.g., 0.05 to 0.2, each time increasing the learning rate by 0.05.
+
+One more parameter is important here (though not strictly necessary), 'momentum'. As the name suggests, using a momentum term will help you get an adequately trained network more quickly. In essence, momentum is a multiplier to the learning rate--as long as the the error rate is decreasing, the momentum term accelerates the progress. The intuition behind the momentum term is 'as long as you traveling toward the destination, increase your velocity'.Typical values for the momentum term are 0.1 or 0.2. In the training scheme above, you should probably hold momentum constant while varying the learning rate.
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

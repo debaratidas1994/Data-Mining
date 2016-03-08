@@ -1,0 +1,105 @@
+=== Run information ===
+
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -2.722932253214729
+    Node 2    1.4723226659593067
+    Node 3    7.82043049951793
+    Node 4    2.443868722516107
+    Node 5    3.201530885671735
+    Node 6    -3.0281089464151147
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    2.722932258743456
+    Node 2    -1.4723226671089364
+    Node 3    -7.820430653667116
+    Node 4    -2.4438687292638233
+    Node 5    -3.2015308924321246
+    Node 6    3.028108958788402
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -2.8783754488183835
+    Attrib preg    -9.079447868879274
+    Attrib plas    -9.396273506987924
+    Attrib pres    2.9422558149576776
+    Attrib skin    2.0758003770037323
+    Attrib insu    -8.023036419765178
+    Attrib mass    -10.734818857856807
+    Attrib pedi    -3.3518466283880084
+    Attrib age    10.737145998129163
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -7.418945790100152
+    Attrib preg    1.150673574271605
+    Attrib plas    -1.9072546608611365
+    Attrib pres    3.403282312301751
+    Attrib skin    -7.795475278795782
+    Attrib insu    0.5709218287459333
+    Attrib mass    -6.176985830095681
+    Attrib pedi    11.301811251887385
+    Attrib age    2.15894737853103
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    0.3325483432081033
+    Attrib preg    0.9103698712206522
+    Attrib plas    -13.824796952946144
+    Attrib pres    -6.39936668126574
+    Attrib skin    3.3726419474851244
+    Attrib insu    -3.0955093615542073
+    Attrib mass    -8.775026662333607
+    Attrib pedi    -5.192368159609418
+    Attrib age    9.269528793152958
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.376747660325633
+    Attrib preg    9.122015480585343
+    Attrib plas    -12.642913808448162
+    Attrib pres    5.67580447475827
+    Attrib skin    -0.0608550132015529
+    Attrib insu    2.307018507010625
+    Attrib mass    -5.232080916356015
+    Attrib pedi    -0.7354842913650445
+    Attrib age    -19.265633701797817
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.05437383478943048
+    Attrib preg    12.83676278178946
+    Attrib plas    -6.062276016682769
+    Attrib pres    -1.3896840458164514
+    Attrib skin    0.34997084802061346
+    Attrib insu    -2.211940814726504
+    Attrib mass    -0.9589656235930499
+    Attrib pedi    6.090003751353257
+    Attrib age    -8.833262465394691
+Class tested_negative
+    Input
+    Node 0
+Class tested_positive
+    Input
+    Node 1
+
+
+
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         579               75.3906 %
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.832     0.392      0.798     0.832     0.815      0.793    tested_negative
+                 0.608     0.168      0.66      0.608     0.633      0.793    tested_positive
+Weighted Avg.    0.754     0.314      0.75      0.754     0.751      0.793
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 416  84 |   a = tested_negative
+ 105 163 |   b = tested_positive
+

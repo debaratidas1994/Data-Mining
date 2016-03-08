@@ -1,0 +1,76 @@
+...INITIALY, MODEL'S Learnable parameters... :
+
+Weights and Bases: 
+
+('For Neuron ', 4)
+Contributing neurons are :
+	Neuron1	-0.13
+	Neuron2	-0.95
+	Neuron3	0.10
+	Bias at this node is : 	0.24
+____________________________________________________________________
+('For Neuron ', 5)
+Contributing neurons are :
+	Neuron1	-0.13
+	Neuron2	-0.16
+	Neuron3	-0.34
+	Bias at this node is : 	0.06
+____________________________________________________________________
+()
+('For Neuron ', 6)
+Contributing neurons are :
+	Neuron4	-0.59
+	Neuron5	0.24
+	Bias at this node is : 	-0.73
+____________________________________________________________________
+('For Neuron ', 7)
+Contributing neurons are :
+	Neuron4	-0.40
+	Neuron5	-0.47
+	Bias at this node is : 	0.03
+____________________________________________________________________
+()
+('Number of iterations = ', 1000)
+
+
+...Finally, MODEL'S Learnable parameters... :
+
+Weights and Bases: 
+
+('For Neuron ', 4)
+Contributing neurons are :
+	Neuron1	-0.59
+	Neuron2	-1.06
+	Neuron3	0.33
+	Bias at this node is : 	-0.22
+____________________________________________________________________
+('For Neuron ', 5)
+Contributing neurons are :
+	Neuron1	0.51
+	Neuron2	0.00
+	Neuron3	-0.66
+	Bias at this node is : 	0.70
+____________________________________________________________________
+()
+('For Neuron ', 6)
+Contributing neurons are :
+	Neuron4	-1.23
+	Neuron5	0.97
+	Bias at this node is : 	0.53
+____________________________________________________________________
+('For Neuron ', 7)
+Contributing neurons are :
+	Neuron4	0.24
+	Neuron5	-1.19
+	Bias at this node is : 	-1.14
+____________________________________________________________________
+()
+FINAL OUTPUTS:
+
+Node 4	-0.846
+Node 5	0.913
+()
+Node 6	0.985
+Node 7	-0.985
+()
+____________________________________________________________________
