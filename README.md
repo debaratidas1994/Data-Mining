@@ -16,3 +16,5 @@ Assignment 7 : Compare classifying abilities of Jrip, J48, Naive Bayes and Rando
 Assignment 8 : Write code to train own neural network and test on diabetes.arff set
 Assignment 9 : KMeans and SVM Applied on Iris Dataset
 Assignment 10 :DBScan Algorithm (Density based clustering) implemented on an image. Tests done to check which is the optimal value of epsilon and minPoints required.
+
+
