@@ -1,0 +1,46 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.LibSVM -S 0 -K 3 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -seed 1
+Relation:     iris-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    150
+Attributes:   5
+              Sepal.Length
+              Sepal.Width
+              Petal.Length
+              Petal.Width
+              Species
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          10                6.6667 %
+Incorrectly Classified Instances       140               93.3333 %
+Kappa statistic                         -0.4   
+Mean absolute error                      0.6222
+Root mean squared error                  0.7888
+Relative absolute error                140      %
+Root relative squared error            167.332  %
+Total Number of Instances              150     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.1       0.82       0.057     0.1       0.073      0.14     setosa
+                 0         0          0         0         0          0.5      versicolor
+                 0.1       0.58       0.079     0.1       0.088      0.26     virginica
+Weighted Avg.    0.067     0.467      0.046     0.067     0.054      0.3  
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  5  0 45 |  a = setosa
+ 37  0 13 |  b = versicolor
+ 45  0  5 |  c = virginica
+

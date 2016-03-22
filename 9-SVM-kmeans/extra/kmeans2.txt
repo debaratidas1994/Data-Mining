@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     iris-weka.filters.unsupervised.attribute.Remove-R1,6
+Instances:    150
+Attributes:   4
+              Sepal.Length
+              Sepal.Width
+              Petal.Length
+              Petal.Width
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 7
+Within cluster sum of squared errors: 12.127790750538196
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                            Cluster#
+Attribute       Full Data          0          1
+                    (150)      (100)       (50)
+===============================================
+Sepal.Length       5.8433      6.262      5.006
+Sepal.Width        3.0573      2.872      3.428
+Petal.Length        3.758      4.906      1.462
+Petal.Width        1.1993      1.676      0.246
+
+
+
+
+Time taken to build model (full training data) : 0.03 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      100 ( 67%)
+1       50 ( 33%)
+
